@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    font-family: 'Manjari', sans-serif;
+  }
+
+  .title h1{
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.9em;
+      text-transform: uppercase;
+  }
+
+  .container{
+      background-color: white;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.6em auto;
+      display: grid;
+      grid-template-columns: 40% 30% 30%;
+      grid-template-rows: auto;
+  }
+
+  .container2{
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.6em auto;
+      display: flex;
+      justify-content: space-evenly;
+      height: 120px;
+  }
+
+.container2 button{
+    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+    background-color: #e7e7e7; color: black;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: none;
+
+}
+
+.container2 button:hover{
+    background-color: #ccffbd
+}
+
+  .inp{
+    color: white;
+    /*grid-column: 1/2;*/
+    background: #435560;
+    padding: 20px;
+    border-top:    1px solid  #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+  .val{
+    color: white;
+    /*grid-column: 2/3;*/
+    background: #435560;
+    padding: 20px;
+    border: 1px solid #dddddd;
+  }
+  .event{
+    color: white;
+    /*grid-column: 3/4;*/
+    background: #435560;
+    padding: 20px;
+    border-top:    1px solid  #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+
+  .container .header, .container .footer{
+      grid-column: 1/4;
+      background-color: #1e272e;
+      color: white;
+  }
+
+.id_input{
+    background-color: #ccf2f4;
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    font-style: italic;
+    font-weight: bold; 
+}
+
+
+.id_input:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #f4f9f9;
+}
+
+.event_info{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  DESPUES DE ACOMODAR ESTOS DOS ULTIMAS TODO EL GRID SE ACOMODA POR SI MISMO*/
+
+  .content article{
+      background: #808e9b;
+      padding: 20px;
+      margin-top: 5px;
+      color: #dfe6e9;
+  }
+
+  .container > .related-post{
+      background: #2d3436;
+      color: #ffffff;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease ;    
+  }
+
+  .container > .related-post:hover{
+      cursor: pointer;
+      color: #000000;
+      background-color: #ffffff;
+}
+  .content article h1,
+  .content article p{
+      padding: 10px;
+  }
+  
+  .image{
+      /*height: 200px;
+      width: 300px;*/
+      width: 100%;
+      margin-top: 5px;
+
+  }
+
+  /*USO DE MEDIA QUERIS PARA HACER RESPONSIVO ESTE LAYOUT */
+
+  @media screen and (max-width: 768px){
+      /*body{
+          background: #000000;
+          Esta tecnica siver para saber si e media query esta detectando que cambiaste a pantalla de menor tamaño 
+      }*/
+      .header{
+          text-align: center;
+      }
+
+      .container .content{
+          grid-column: 1/-1;
+      }
+
+      .container .sidebar{
+          grid-column: 1/6;
+      }
+
+      .container .related-post{
+          grid-column: 1/-1;
+        }
+
+      /* EL 1/-1 INDICA QUE LA IMAGEN VA ABARCAR TODA LA GRILLA CUANDO NO SABES EL NUMERO CONCRETO DE ELEMENTOS */
+
+
+  }

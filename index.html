@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Inputs</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="title">
+        <h1>Practica Inputs</h1>
+    </header>
+
+    <div class="container">
+        <div class="inp">
+            Inputs
+        </div>
+        <div class="val">
+            Valor
+        </div>
+        <div class="event">
+            Evento
+        </div>
+        
+        <div class="id_input">
+            <input type="button" value="Button" id="btn"> 
+        </div>
+        <div class="id_input" id="value_btn"></div>
+        <div class="id_input" id="event_btn"></div>
+        <!-- CHECKBOX -->
+        <div class="id_input">
+            <input type="checkbox"  id="check">
+        </div>
+        <div class="id_input" id="value_check"></div>
+        <div class="id_input" id="event_check"></div>
+        <!-- COLOR -->
+        <div class="id_input">
+            <input type="color"  id="col">
+        </div>
+        <div class="id_input" id="value_col"></div>
+        <div class="id_input" id="event_col"></div>
+        <!-- DATE -->
+        <div class="id_input">
+            <input type="date" id="dat">
+        </div>
+        <div class="id_input" id="value_dat"></div>
+        <div class="id_input" id="event_dat"></div>
+        <!-- DATETIME LOCAL-->
+        <div class="id_input">
+            <input type="datetime-local" id="datt">
+        </div> 
+        <div class="id_input" id="value_datt"></div>
+        <div class="id_input"  id="event_datt"></div>
+        <!-- EMAIL -->
+        <div class="id_input">
+            <input type="email" id="eml" value="" placeholder=" Email...">
+        </div>
+        <div class="id_input" id="value_eml"></div>
+        <div class="id_input" id="event_eml"></div>
+        <!-- FILE -->
+        <div class="id_input">
+            <input type="file" id="fil">
+        </div>
+        <div class="id_input" id="value_fil"></div>
+        <div class="id_input" id="event_fil"></div>
+        <!-- HIDDEN -->
+        <div class="id_input">
+            <input type="hidden" id="hdd">
+        </div>
+        <div class="id_input" id="value_hdd"></div>
+        <div class="id_input" id="event_hdd"></div>
+        <!-- IMAGE -->
+        <div class="id_input">
+            <input type="image" id="img" src="./img/kofO1.png">
+        </div>
+        <div class="id_input" id="value_img"></div>
+        <div class="id_input" id="event_img"></div>
+        <!-- MONTH -->
+        <div class="id_input">
+            <input type="month" id="mnt">
+        </div>
+        <div class="id_input" id="value_mnt"></div>
+        <div class="id_input" id="event_mnt"></div>
+        <!-- NUMBER -->
+        <div class="id_input">
+            <input type="number" id="numb">
+        </div>
+        <div class="id_input" id="value_numb"></div>
+        <div class="id_input" id="event_numb"></div>
+        <!-- PASSWORD -->
+        <div class="id_input">
+            <input type="password" id="pass" placeholder=" Password...">
+        </div>
+        <div class="id_input" id="value_pass"></div>
+        <div class="id_input" id="event_pass"></div>
+        <!-- RADIO -->
+        <div class="id_input">
+            <input type="radio" id="rad">
+        </div>
+        <div class="id_input" id="value_rad"></div>
+        <div class="id_input" id="event_rad"></div>
+        <!-- RANGE -->
+        <div class="id_input">
+            <input type="range" id="rag">
+        </div>
+        <div class="id_input" id="value_rag"></div>
+        <div class="id_input" id="event_rag"></div>
+        <!-- RESET -->
+        <div class="id_input">
+            <input type="reset" id="res" value="Reset">
+        </div>
+        <div class="id_input" id="value_res"></div>
+        <div class="id_input" id="event_res"></div>
+        <!-- SEARCH -->
+        <div class="id_input">
+            <input type="search" id="sch" placeholder=" Search...">
+        </div>
+        <div class="id_input" id="value_sch"></div>
+        <div class="id_input" id="event_sch"></div>
+        <!-- SUBMIT -->
+        <div class="id_input">
+            <input type="submit" id="sub" value="Submit">
+        </div>
+        <div class="id_input" id="value_sub"></div>
+        <div class="id_input" id="event_sub"></div>
+        <!-- TEL -->
+        <div class="id_input">
+            <input type="tel" id="tl" placeholder=" Tel...">
+        </div>
+        <div class="id_input" id="value_tl"></div>
+        <div class="id_input" id="event_tl"></div>
+        <!-- TEXT -->
+        <div class="id_input">
+            <input type="text" id="txt" placeholder=" Text...">
+        </div>
+        <div class="id_input" id="value_txt"></div>
+        <div class="id_input" id="event_txt"></div>
+        <!-- TIME -->
+        <div class="id_input">
+            <input type="time" id="tm">
+        </div>
+        <div class="id_input" id="value_tm"></div>
+        <div class="id_input" id="event_tm"></div>
+        <!-- URL -->
+        <div class="id_input">
+            <input type="url" id="url" placeholder=" Url... ">
+        </div>
+        <div class="id_input" id="value_url"></div>
+        <div class="id_input" id="event_url"></div>
+        <!-- WEEK -->
+        <div class="id_input">
+            <input type="week" id="wk">
+        </div>
+        <div class="id_input" id="value_wk"></div>
+        <div class="id_input" id="event_wk"></div>
+    </div>
+
+    <div id="loadFile" class="container2">
+        
+            <button onclick="swithToInput()">Archivo</button>
+            <button onclick="loadJsonFile()" >Cargar Json</button>
+        
+    </div>
+    <script type="text/javascript" src="util.js">
+    </script>
+</body>
+</html>
